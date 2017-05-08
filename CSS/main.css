@@ -9,6 +9,9 @@ nav {
     height: 800px;
     color: #fff;
 }
+.article #banner{
+    height: 300px;
+}
 header{
     background: rgba(0,0,0,0.4);
 }
@@ -26,8 +29,8 @@ nav ul li , nav .logo{
 
 nav ul li a {
     line-height: inherit;
-    text-decoration: none;
     display: inline-block;
+    text-decoration: none;
     height: inherit;
     color: #fff;
 }
@@ -44,7 +47,9 @@ nav ul li.logo {
     position: relative;
     top: 160px;
 }
-
+.article #banner .inner{
+    top: 30px;
+}
 #banner .inner h1 {
     margin: 0;
 }
@@ -75,6 +80,9 @@ h1{
     padding: 12px;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+}
+.article h1{
+    border: none;
 }
 h2{
     font-size: 30px;
@@ -235,4 +243,71 @@ ul.share-group{
 }
 .main-wrapper{
     background: #444 url(../img/bg.jpg);
+    overflow: hidden;
+
+}
+.mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+ #sidebar{
+     width: 300px;
+     background: #333;
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     right: -300px;
+     transition: right 0.5s;
+     color: #fff;
+     padding: 20px 0;
+ }
+ #sidebar ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+
+ }
+#sidebar ul li{
+    margin-top: 30px;
+}
+ #sidebar ul a {
+     padding: 20px;
+     display: inline-block;
+     text-decoration: none;
+     color: #fff;
+     padding: 10px 30px;
+     width: 100%;
+ }
+ #sidebar ul a:hover{
+     background: #444;
+
+ }
+ .back-to-top{
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     border: 1px solid #888;
+ }
+ .content{
+     background: #fefefe;
+ }
+.content_wrapper{
+
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.article_info{
+    font-size: 16px;
+    color: #888;
+    text-align: right;
+    padding: 15px 0;
+}
+article{
+    line-height: 2;
 }
